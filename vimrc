@@ -125,3 +125,7 @@ set clipboard=unnamed
 "VIM in the Shell
 "set editing-mode vi
 
+"Comments
+Plugin 'scrooloose/nerdcommenter'   " commenter: \cc \cu
+let mapleader=';'
+
