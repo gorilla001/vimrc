@@ -129,3 +129,6 @@ set clipboard=unnamed
 Plugin 'scrooloose/nerdcommenter'   " commenter: \cc \cu
 let mapleader=';'
 
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
